@@ -1,0 +1,31 @@
+Prefix(:=<http://www.semanticweb.org/example-ontologies/1.0.0/base>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/example-ontologies/1.0.0/base>
+
+Declaration(Class(<http://www.semanticweb.org/example-ontologies/1.0.0/base#DataSet>))
+Declaration(DataProperty(<http://www.semanticweb.org/example-ontologies/1.0.0/base#sourceValue>))
+Declaration(DataProperty(<http://www.semanticweb.org/example-ontologies/1.0.0/base#targetValue>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/example-ontologies/1.0.0/base#ds_1>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/example-ontologies/1.0.0/base#ds_1> (<http://www.semanticweb.org/example-ontologies/1.0.0/base#ds_1>)
+
+ClassAssertion(<http://www.semanticweb.org/example-ontologies/1.0.0/base#DataSet> <http://www.semanticweb.org/example-ontologies/1.0.0/base#ds_1>)
+DataPropertyAssertion(<http://www.semanticweb.org/example-ontologies/1.0.0/base#sourceValue> <http://www.semanticweb.org/example-ontologies/1.0.0/base#ds_1> "m"^^xsd:string)
+
+
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment ""^^xsd:string) Annotation(rdfs:label "S1"^^xsd:string) Body(DataPropertyAtom(<http://www.semanticweb.org/example-ontologies/1.0.0/base#sourceValue> Variable(<urn:swrl#x>) "m"^^xsd:string))Head(DataPropertyAtom(<http://www.semanticweb.org/example-ontologies/1.0.0/base#targetValue> Variable(<urn:swrl#x>) "meter"^^xsd:string)))
+)

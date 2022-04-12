@@ -1,0 +1,98 @@
+[
+  {
+    "id": "urn:ngsi-ld:Subscription:OffStreetParking",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "OffStreetParking"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:Subscription:ParkingSpot",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "ParkingSpot"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:Subscription:AirQualityObserved",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "AirQualityObserved"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:Subscription:AirQualityForecast",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "AirQualityForecast"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:Subscription:WeatherObserved",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "WeatherObserved"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:Subscription:WeatherForecast",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "WeatherForecast"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  }
+]

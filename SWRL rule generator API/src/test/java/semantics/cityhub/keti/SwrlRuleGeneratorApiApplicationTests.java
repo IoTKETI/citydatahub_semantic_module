@@ -1,0 +1,13 @@
+package semantics.cityhub.keti;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SwrlRuleGeneratorApiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

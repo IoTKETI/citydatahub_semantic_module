@@ -1,0 +1,18 @@
+[
+  {
+    "id": "urn:ngsi-ld:Subscription:Sensor",
+    "type": "Subscription",
+    "entities": [
+      {
+        "type": "Sensor"
+      }
+    ],
+    "notification": {
+      "format": "normalized",
+      "endpoint": {
+        "uri": "http://localhost:8081/notify",
+        "accept": "application/json"
+      }
+    }
+  }
+]
